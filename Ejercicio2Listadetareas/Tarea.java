@@ -2,19 +2,28 @@ package Ejercicio2Listadetareas;
 
 public class Tarea {
 
-    public String nombre;
-    public String descripsion;
+    private String nombre;
+    public String descripcion;
     //constructor
-    public Tarea(String nombre, String descripsion){
+    public Tarea(String nombre, String descripcion){
 
         this.nombre = nombre;
-        this.descripsion = descripsion;
+        this.descripcion = descripcion;
 
     }
+    public String getNombre(){
+        //para mostrar un atributo privado
+        return this.nombre;
+    }
 
-    public String mostrar(){
+    public void setNombre(String nombre){
+        //para mostrar un atributo privado
+        this.nombre = nombre;
+    }
 
-       return this.nombre+" : "+this.descripsion+" . ";
+    public void mostrar(){
+
+       System.out.println(this.nombre+" : "+this.descripcion+" . ");
        ///opcion 2: String a = this.nombre+" : "+this.descripsion+" : ";
 
     }
